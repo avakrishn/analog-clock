@@ -6,11 +6,15 @@ window.onload = () => {
 
 const initClock = () => {
     const clock = document.querySelector('.clock');
+    const clockFace = document.createElement('div');
+    clockFace.classList.add('clock-face');
+    clock.appendChild(clockFace);
     const children = ['hour-hand', 'min-hand', 'second-hand'];
     children.forEach(child =>{
         const hand = document.createElement('div');
         hand.classList.add('hand', child);
-        clock.appendChild(hand);
+        clockFace.appendChild(hand);
     });
+    console.log(clock);
 }
 
