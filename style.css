@@ -1,8 +1,8 @@
 body{
-    background: rgba(0, 0, 255, 0.541);
+    background: rgba(2, 2, 102, 0.596);
 }
 
-.clock{
+.analog{
     width: 20rem;
     height: 20rem;
     border: 20px solid white;
@@ -30,4 +30,8 @@ body{
     background: black;
     position: absolute;
     top: 50%;
+    transform-origin: 100%; /* establishes the origin of transformation for an element, 100% will change origin to right end rather than middle (50%) */
+    transform: rotate(90deg); /* rotates hands 90 degrees such that start at 12:00*/ 
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 3.7, 0.58, 1);
 }
