@@ -13,7 +13,7 @@ const initClock = () => {
     title.innerText = 'CURRENT TIME';
 
     h1.forEach(header => {
-        Object.assign(header.style, {color: 'white', textAlign: 'center'});
+        Object.assign(header.style, {color: 'white', textAlign: 'center', fontSize: '40px'});
     });    
 
     clockFace.classList.add('clock-face');
